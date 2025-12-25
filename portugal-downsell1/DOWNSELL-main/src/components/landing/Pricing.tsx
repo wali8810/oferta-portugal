@@ -1,5 +1,7 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Script from "next/script";
 import imageData from '@/app/lib/placeholder-images.json';
 
 const includedFeatures = [
@@ -27,41 +29,52 @@ export function Pricing() {
     <section id="plans" className="py-16 md:py-24 bg-[#00110F]">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto bg-white text-black rounded-2xl shadow-2xl border-4 border-yellow-400 p-6 md:p-8 w-full animate-pulse-yellow">
-            <div className="text-center mb-6">
-                <h2 className="text-2xl md:text-3xl font-extrabold uppercase tracking-wide text-black">A sua Última Oportunidade:</h2>
-            </div>
+          <div className="text-center mb-6">
+            <h2 className="text-2xl md:text-3xl font-extrabold uppercase tracking-wide text-black">A sua Última Oportunidade:</h2>
+          </div>
 
-            <div className="flex justify-center">
-                <Image
-                    src={courseMockup.src}
-                    alt={courseMockup.alt}
-                    width={courseMockup.width}
-                    height={courseMockup.height}
-                    data-ai-hint={courseMockup.hint}
-                />
-            </div>
-            
-            <ul className="text-left space-y-3 my-4 text-gray-700 flex-grow text-sm md:text-base">
-              {includedFeatures.map((item, index) => (
-                <li key={index} className="flex items-start pb-3 border-b border-gray-200 last:border-b-0">
-                  <CheckIcon />
-                  <span dangerouslySetInnerHTML={{ __html: item }} />
-                </li>
-              ))}
-            </ul>
+          <div className="flex justify-center">
+            <Image
+              src={courseMockup.src}
+              alt={courseMockup.alt}
+              width={courseMockup.width}
+              height={courseMockup.height}
+              data-ai-hint={courseMockup.hint}
+            />
+          </div>
 
-            <div className="text-center my-6">
-              <p className="text-red-500 line-through text-xl">Preço Original: €47,00</p>
-              <p className="uppercase font-bold text-black text-md mt-2">A SUA OFERTA FINAL: APENAS</p>
-              <p className="text-6xl md:text-7xl font-extrabold text-green-500 animate-gentle-pulse">
-                  €10
-              </p>
-            </div>
+          <ul className="text-left space-y-3 my-4 text-gray-700 flex-grow text-sm md:text-base">
+            {includedFeatures.map((item, index) => (
+              <li key={index} className="flex items-start pb-3 border-b border-gray-200 last:border-b-0">
+                <CheckIcon />
+                <span dangerouslySetInnerHTML={{ __html: item }} />
+              </li>
+            ))}
+          </ul>
 
-            <div className="mt-auto">
-                <div id="hotmart-sales-funnel"></div>
-                <p className="text-sm font-bold text-gray-700 text-center mt-4">ATENÇÃO: <span className="font-normal">Esta é uma oferta única. Se sair desta página, <u className="font-bold">perde o acesso</u> a este preço para sempre.</span></p>
-            </div>
+          <div className="text-center my-6">
+            <p className="text-red-500 line-through text-xl">Preço Original: €47,00</p>
+            <p className="uppercase font-bold text-black text-md mt-2">A SUA OFERTA FINAL: APENAS</p>
+            <p className="text-6xl md:text-7xl font-extrabold text-green-500 animate-gentle-pulse">
+              €10
+            </p>
+          </div>
+
+          <div className="mt-auto">
+            <div id="hotmart-sales-funnel"></div>
+            <Script
+              src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"
+              strategy="lazyOnload"
+              onLoad={() => {
+                // @ts-ignore
+                if (typeof checkoutElements !== 'undefined') {
+                  // @ts-ignore
+                  checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+                }
+              }}
+            />
+            <p className="text-sm font-bold text-gray-700 text-center mt-4">ATENÇÃO: <span className="font-normal">Esta é uma oferta única. Se sair desta página, <u className="font-bold">perde o acesso</u> a este preço para sempre.</span></p>
+          </div>
         </div>
       </div>
     </section>
