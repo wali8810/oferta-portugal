@@ -1,0 +1,65 @@
+{
+  "courseMockup": {
+    "src": "https://picsum.photos/seed/courseMockup/600/400",
+    "alt": "Mockup do curso Guitar Rhythms Unleashed",
+    "width": 600,
+    "height": 400,
+    "hint": "course mockup"
+  },
+  "guaranteeSeal": {
+    "src": "https://picsum.photos/seed/guaranteeSeal/150/150",
+    "alt": "Selo de garantia de 30 dias",
+    "width": 150,
+    "height": 150,
+    "hint": "guarantee seal"
+  },
+  "testimonial1": {
+    "src": "https://picsum.photos/seed/person1/100/100",
+    "alt": "Depoimento de cliente satisfeito",
+    "width": 100,
+    "height": 100,
+    "hint": "happy person"
+  },
+  "testimonial2": {
+    "src": "https://picsum.photos/seed/person2/100/100",
+    "alt": "Depoimento de cliente satisfeito",
+    "width": 100,
+    "height": 100,
+    "hint": "happy person"
+  },
+  "testimonial3": {
+    "src": "https://picsum.photos/seed/person3/100/100",
+    "alt": "Depoimento de cliente satisfeito",
+    "width": 100,
+    "height": 100,
+    "hint": "happy person"
+  },
+  "creation1": {
+    "src": "https://picsum.photos/seed/guitar1/600/400",
+    "alt": "Pessoa a tocar guitarra",
+    "width": 600,
+    "height": 400,
+    "hint": "playing guitar"
+  },
+  "creation2": {
+    "src": "https://picsum.photos/seed/guitar2/600/400",
+    "alt": "Close-up numa guitarra",
+    "width": 600,
+    "height": 400,
+    "hint": "guitar closeup"
+  },
+  "creation3": {
+    "src": "https://picsum.photos/seed/guitar3/600/400",
+    "alt": "Acordes de guitarra",
+    "width": 600,
+    "height": 400,
+    "hint": "guitar chords"
+  },
+  "creation4": {
+    "src": "https://picsum.photos/seed/guitar4/600/400",
+    "alt": "Concerto de música",
+    "width": 600,
+    "height": 400,
+    "hint": "music concert"
+  }
+}

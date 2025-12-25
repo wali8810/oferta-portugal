@@ -1,0 +1,37 @@
+{
+  "courseMockup": {
+    "src": "https://imgur.com/kEKd50J.png",
+    "alt": "Vídeo-aulas exclusivas",
+    "width": 608,
+    "height": 405,
+    "hint": "video course mockup"
+  },
+  "guaranteeSeal": {
+    "src": "https://i.imgur.com/3nS8KCV.png",
+    "alt": "Selo de Garantia de 30 dias",
+    "width": 250,
+    "height": 250,
+    "hint": "satisfaction guarantee seal"
+  },
+  "testimonial1": {
+    "src": "https://imgur.com/eh7thFQ.png",
+    "alt": "Depoimento de Laura S.",
+    "width": 100,
+    "height": 100,
+    "hint": "woman avatar"
+  },
+  "testimonial2": {
+    "src": "https://imgur.com/O68dZWN.png",
+    "alt": "Depoimento de Beatriz C.",
+    "width": 100,
+    "height": 100,
+    "hint": "woman avatar"
+  },
+  "testimonial3": {
+    "src": "https://imgur.com/Ka9klG5.png",
+    "alt": "Depoimento de Inês M.",
+    "width": 100,
+    "height": 100,
+    "hint": "woman avatar"
+  }
+}

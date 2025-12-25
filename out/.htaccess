@@ -1,0 +1,19 @@
+﻿RewriteEngine On
+RewriteBase /
+
+# Rotas de slugs limpos
+RewriteRule ^portugal-upsell1/?$ /portugal-upsell1/index.html [L]
+RewriteRule ^portugal-upsell2/?$ /portugal-upsell2/index.html [L]
+RewriteRule ^portugal-upsell3/?$ /portugal-upsell3/index.html [L]
+RewriteRule ^portugal-downsell1/?$ /portugal-downsell1/index.html [L]
+RewriteRule ^portugal-downsell2/?$ /portugal-downsell2/index.html [L]
+RewriteRule ^portugal-downsell3/?$ /portugal-downsell3/index.html [L]
+RewriteRule ^portugal-obrigado/?$ /portugal-obrigado/index.html [L]
+
+# Permitir acesso direto a arquivos existentes
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Fallback para index.html
+RewriteRule ^(.*)$ /index.html [L]
