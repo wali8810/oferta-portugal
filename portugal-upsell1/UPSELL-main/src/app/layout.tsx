@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import Script from 'next/script';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
@@ -6,7 +6,7 @@ import { Poppins, Montserrat } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: '(1) A sua compra está quase pronta...',
-  description: 'Adicione o método completo e validado para criar caixas que vendem em 48h por um pagamento único de €17.',
+  description: 'Adicione o método completo e validado para criar caixas que vendem em 48h por um pagamento único de €14,90.',
 };
 
 const poppins = Poppins({
@@ -33,12 +33,12 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <noscript>
-            <img
-                height="1"
-                width="1"
-                style={{ display: 'none' }}
-                src="https://www.facebook.com/tr?id=768977436001525&ev=PageView&noscript=1"
-            />
+          <img
+            height="1"
+            width="1"
+            style={{ display: 'none' }}
+            src="https://www.facebook.com/tr?id=768977436001525&ev=PageView&noscript=1"
+          />
         </noscript>
         {children}
         <Toaster />

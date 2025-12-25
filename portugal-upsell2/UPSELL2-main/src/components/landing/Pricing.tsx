@@ -1,7 +1,4 @@
-"use client";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Script from "next/script";
 import imageData from '@/app/lib/placeholder-images.json';
 
 const includedFeatures = [
@@ -64,17 +61,6 @@ export function Pricing() {
 
           <div className="mt-auto">
             <div id="hotmart-sales-funnel"></div>
-            <Script
-              src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"
-              strategy="lazyOnload"
-              onLoad={() => {
-                // @ts-ignore
-                if (typeof checkoutElements !== 'undefined') {
-                  // @ts-ignore
-                  checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
-                }
-              }}
-            />
             <p className="text-sm font-bold text-gray-700 text-center mt-4">⚠️ ATENÇÃO: <span className="font-normal">Esta oferta <u className="font-bold">expira</u> assim que sair desta página.</span></p>
           </div>
         </div>
