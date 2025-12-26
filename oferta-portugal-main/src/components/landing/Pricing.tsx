@@ -111,7 +111,7 @@ export function Pricing() {
 
               <div className="mt-auto">
                 <div className="flex justify-center flex-col items-center gap-4">
-                  <a href="https://pay.hotmart.com/D101925163B?bid=1757992511936" rel="noopener noreferrer" className="block w-full">
+                  <a href="https://pay.hotmart.com/D101925163B?checkoutMode=10" rel="noopener noreferrer" className="block w-full">
                     <button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-4 rounded-lg text-lg md:text-xl shadow-lg animate-pulse-green">
                       SIM! QUERO ESTA SUPER OFERTA!
                     </button>
