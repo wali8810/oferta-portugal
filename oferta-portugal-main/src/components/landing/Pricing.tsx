@@ -9,7 +9,7 @@ const planoCompletoFeatures = [
   "<b>Curso Completo: Padrão Mágico</b>",
 
   "<b>7 Dias de Garantia</b>",
-  "<b>Certificado incluso</b>",
+
 ];
 
 const planoCompletoBonus = [
